@@ -1,0 +1,5 @@
+# Make a dump by entering:
+pg_dump -cC --inserts -U bartosz worldcup > worldcup.sql
+
+# Rebuild the database by entering:
+psql -U postgres < worldcup.sql
